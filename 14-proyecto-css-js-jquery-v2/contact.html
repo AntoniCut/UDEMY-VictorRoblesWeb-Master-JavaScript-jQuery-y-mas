@@ -1,0 +1,136 @@
+<!--  *************************************  -->
+<!--  **********  /contact.html  **********  -->
+<!--  *************************************  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+
+    <!--  **********  Estilos css  **********  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+
+    <!--  **********  Libreria jQuery  **********  -->
+    <script src="js/jquery-core-3.7.1/jquery-3.7.1.min.js"> </script>
+
+    <!--  Libreria jQuery UI  -->
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"> </script>
+
+    
+    <!--   **********  Plugin validacion Formularios  ********** -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!--  **********  Importacion de Archivos HTML  **********  -->
+    <script>
+        $(document).ready(function () {
+            $("#selector-theme").load("selector-tema.html");
+            $("#menu").load("menu.html");
+            $("#sidebar").load("aside.html");
+        });
+    </script>
+
+    <!--  **********  Archivos JS  **********  -->
+    <script type="text/javascript" src="js/selector-tema.js"> </script>
+    <script type="text/javascript" src="js/subir-arriba.js"> </script>
+    <script type="text/javascript" src="js/login.js"> </script>
+    <script type="text/javascript" src="js/validacion-formulario.js"> </script>
+
+
+
+
+</head>
+
+<body>
+
+    <!--  **********  Selector de Temas  **********  -->
+    <div id="selector-theme">
+        <!--  ----------  Carga Dinamica  ----------  -->
+    </div>
+
+
+    <!--  **********  Contenido GLOBAL  **********  -->
+    <section id="global">
+
+        <!--  **********  CABECERA  **********  -->
+        <header>
+
+            <!--  *****  Logo  *****  -->
+            <div id="logo">
+                <h1> Proyecto JS y jQuery </h1>
+            </div>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+            <!--  *****  MENU  *****  -->
+            <nav id="menu"> <!--  ----------  Carga Dinamica  ----------  --> </nav>
+
+        </header>
+
+        <!--  *****  Contenido  *****  -->
+        <section id="content">
+
+            <div id="box">
+
+                <!--  Cargar Formulario de Contacto  -->
+                <h2> Contacto </h2>
+
+                <form id="form_contact">
+                    <label for="name"> Nombre </label>
+                    <input type="text" name="name" data-validation="alphanumeric"> <br>
+
+                    <label for="surname"> Apellido </label>
+                    <input type="text" name="surname" data-validation="alphanumeric"> <br>
+
+                    <label for="email"> Email </label>
+                    <input type="email" name="email" data-validation="email"> <br>
+
+                    <label for="sex"> Sexo </label>
+                    <select data-validation="required" name="sex">
+                        <option value="men"> Hombre </option>
+                        <option value="woman"> Mujer </option>
+                    </select> <br>
+
+                    <label> Fecha de Nacimiento </label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"
+                        for="date"> <br>
+
+                    <label for="years"> Edad </label>
+                    <input type="number" name="years" data-validation="number"> <br> <br>
+
+                    <input type="submit" value="Enviar" id="enviar">
+                </form>
+
+            </div>
+
+            <!--  *****  Aside, Barra Lateral  *****  -->
+            <aside id="sidebar"> <!--  ----------  Carga Dinamica  ----------  --> </aside>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+
+        </section>
+
+    </section>
+
+    <!--  **********  FOOTER  **********  -->
+    <footer>
+        Master de JavaScript de antonydev.es &copy;
+        <a href="#" class="subir"> Ir arriba </a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reloj </title>
+
+    <!--  Estilos css  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+
+    <!--  Libreria jQuery  -->
+    <script src="js/jquery-core-3.7.1/jquery-3.7.1.min.js"> </script>
+
+    <!--  Libreria momentjs  -->
+    <script src="js/momentjs/moment/src/locale/es.js"> </script>
+    <script src="js/momentjs/moment/min/moment.min.js"> </script>
+
+    <!--  Código JS  -->
+    <script type="text/javascript" src="js/main.js"> </script>
+
+</head>
+
+<body>
+
+    <div id="selector-theme">
+        <div id="to-green"> </div>
+        <div id="to-red"> </div>
+        <div id="to-blue"> </div>
+    </div>
+
+    <section id="global">
+
+        <!--  Cabecera  -->
+        <header>
+
+            <!--  Logo  -->
+            <div id="logo">
+                <h1> Proyecto JS y jQuery </h1>
+            </div>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+            <!--  Menu  -->
+            <nav id="menu">
+                <ul>
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="reloj.html"> Reloj </a> </li>
+                    <li> <a href="about.html"> Sobre mi </a> </li>
+                    <li> <a href="contact.html"> Contacto </a> </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!--  Contenido  -->
+        <section id="content">
+
+            <div id="box">
+
+                <!--  Cargar Reloj  -->
+                <div id="reloj"> </div>
+
+            </div>
+
+
+            <!--  Barra Lateral-->
+            <aside id="sidebar">
+                <div id="about">
+                    <h4> <span> ¿Quien soy? </span> </h4>
+                    <img src="img/caracol.jpg">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Debitis, repellat impedit dolores, eum ad accusamus dolorem
+                        sit perspiciatis rem, quibusdam nam! Suscipit commodi,
+                        iure quas nostrum explicabo velit? Doloribus, reiciendis?
+                    </p>
+                </div>
+                <div id="login">
+                    <h4> <span> Identificate </span> </h4>
+                    <form>
+                        <label for="name"> Nombre </label> <br>
+                        <input type="text" name="name" id="form_name"> <br>
+                        <label for="email"> correo </label> <br>
+                        <input type="email" name="email"> <br>
+                        <label for="password"> password </label> <br>
+                        <input type="password" name="password"> <br>
+                        <input type="submit" value="Entrar"> <br>
+                    </form>
+                </div>
+            </aside>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+
+        </section>
+
+    </section>
+
+    <!--  Footer  -->
+    <footer>
+        Master de JavaScript de antonydev.es &copy;
+        <a href="#" class="subir"> Ir arriba </a>
+    </footer>
+
+</body>
+
+</html>

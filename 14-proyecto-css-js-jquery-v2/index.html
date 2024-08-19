@@ -1,0 +1,127 @@
+<!--  ***********************************  -->
+<!--  **********  /index.html  **********  -->
+<!--  ***********************************  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Proyecto con HTML, CSS, JavaScript y jQuery - V2 </title>
+
+
+    <!--  **********  Estilos css  **********  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+
+
+    <!--  **********  Libreria jQuery  **********  -->
+    <script src="js/jquery-core-3.7.1/jquery-3.7.1.min.js"> </script>
+
+    <!--  **********  Librerias jQuery UI  **********  -->
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"> </script>
+
+
+    <!--  **********  Importacion de Archivos HTML  **********  -->
+    <script>
+
+        $(document).ready(function () {
+            $("#selector-theme").load("selector-tema.html");
+            $("#menu").load("menu.html");
+            $("#sidebar").load("aside.html");
+        });
+
+    </script>
+
+
+    <!--  **********  Slider código jQuery CDN  **********  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <!--  **********  Archivos JS  **********  -->
+    <script type="text/javascript" src="js/slider.js"> </script>
+    <script type="text/javascript" src="js/posts.js"> </script>
+    <script type="text/javascript" src="js/selector-tema.js"> </script>
+    <script type="text/javascript" src="js/subir-arriba.js"> </script>
+    <script type="text/javascript" src="js/login.js"> </script>
+
+</head>
+
+<body>
+
+    <!--  **********  Selector de Temas  **********  -->
+    <div id="selector-theme"> <!--  ----------  Carga Dinamica  ----------  --> </div>
+
+
+    <!--  **********  Contenido GLOBAL  **********  -->
+    <section id="global">
+
+
+        <!--  **********  CABECERA  **********  -->
+        <header>
+
+
+            <!--  *****  Logo  *****  -->
+            <div id="logo">
+                <h1> Proyecto JS y jQuery </h1>
+            </div>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+
+            <!--  *****  MENU  *****  -->
+            <nav id="menu"> <!--  ----------  Carga Dinamica  ----------  --> </nav>
+
+        </header>
+
+
+        <!--  **********  SLIDER  **********  -->
+        <div id="slider">
+            <div class="galeria">
+                <div> <img src="img/hojas.jpg" title="Hojas"> </div>
+                <div> <img src="img/rojo.jpg" title="Rojo"> </div>
+                <div> <img src="img/cielo.jpg" title="Cielo"> </div>
+            </div>
+        </div>
+
+
+        <!--  *****  Contenido  *****  -->
+        <section id="content">
+
+            <!--  *****  Seccion de Posts  *****  -->
+            <div id="posts">
+                <!--  Cargar posts desde un json  -->
+            </div>
+
+
+            <!--  *****  Aside, Barra Lateral  *****  -->
+            <aside id="sidebar"> <!--  ----------  Carga Dinamica  ----------  --> </aside>
+
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+
+        </section>
+
+    </section>
+
+    <!--  **********  FOOTER  **********  -->
+    <footer>
+        Master de JavaScript de antonydev.es &copy;
+        <a href="#" class="subir"> Ir arriba </a>
+    </footer>
+
+
+</body>
+
+</html>

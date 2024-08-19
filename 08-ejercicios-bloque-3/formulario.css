@@ -1,0 +1,18 @@
+.box {
+    width: 400px;
+    height: 250px;
+    float: left;
+    margin-right: 300px;
+    margin: 20px;
+}
+
+.dashed {
+    border: 3px dashed black;
+    padding: 5px;
+}
+
+.red {
+    margin-left: 20px;
+    color: red;
+}
+

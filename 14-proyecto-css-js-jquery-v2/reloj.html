@@ -1,0 +1,101 @@
+<!--  ***********************************  -->
+<!--  **********  /reloj.html  **********  -->
+<!--  ***********************************  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reloj </title>
+
+    <!--  **********  Estilos css  **********  -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+    <!--  <link id="theme" rel="stylesheet" type="text/css" href="css/blue.css">  -->
+
+    <!--  **********  Libreria jQuery  **********  -->
+    <script src="js/jquery-core-3.7.1/jquery-3.7.1.min.js"> </script>
+
+    <!--  **********  Libreria Momentjs  **********  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.js"></script>
+
+    <!--  **********  Importacion de Archivos HTML  **********  -->
+    <script>
+
+        $(document).ready(function () {
+            $("#selector-theme").load("selector-tema.html");
+            $("#menu").load("menu.html");
+            $("#sidebar").load("aside.html");
+        });
+        
+    </script>
+
+    <!--  **********  Archivos JS  **********  -->
+    <script type="text/javascript" src="js/selector-tema.js"> </script>
+    <script type="text/javascript" src="js/subir-arriba.js"> </script>
+    <script type="text/javascript" src="js/login.js"> </script>
+    <script type="text/javascript" src="js/reloj.js"> </script>
+    
+</head>
+
+<body>
+
+    <!--  **********  Selector de Temas  **********  -->
+    <div id="selector-theme">
+        <!--  ----------  Carga Dinamica  ----------  -->
+    </div>
+
+    <!--  **********  Contenido GLOBAL  **********  -->
+    <section id="global">
+
+        <!--  **********  Cabecera  **********  -->
+        <header>
+
+            <!--  *****  Logo  *****  -->
+            <div id="logo">
+                <h1> Proyecto JS y jQuery </h1>
+            </div>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+            <!--  *****  MENU  *****  -->
+            <nav id="menu"> <!--  ----------  Carga Dinamica  ----------  --> </nav>
+
+        </header>
+
+        <!--  *****  Contenido  *****  -->
+        <section id="content">
+
+            <div id="box">
+
+                <!--  **********  Cargar Reloj  **********  -->
+                <div id="reloj">  <!--  ----------  Carga Dinamica  ----------  -->  </div>
+
+            </div>
+
+
+            <!--  *****  Aside, Barra Lateral  *****  -->
+            <aside id="sidebar"> <!--  ----------  Carga Dinamica  ----------  --> </aside>
+
+            <!--  Limpiar Flotados -->
+            <div class="clearfix"> </div>
+
+        </section>
+
+    </section>
+
+    <!--  **********  FOOTER  **********  -->
+    <footer>
+        Master de JavaScript de antonydev.es &copy;
+        <a href="#" class="subir"> Ir arriba </a>
+    </footer>
+
+</body>
+
+</html>
